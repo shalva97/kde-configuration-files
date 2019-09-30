@@ -1,9 +1,9 @@
 # KDE config file paths
 
-* Krunner (application launcher)
+* Krunner (application launcher) (Search -> Plasma Search)
   * .config/krunnerrc
-* Keybindings
-  * .config/khotkeys
-  * .config/kglobalshortcutsrc
+* Keybindings (Shortcuts)
+  * .config/khotkeys (Shortcuts -> Custom Shrotcuts)
+  * .config/kglobalshortcutsrc ( Shrotcuts -> Global Shortcuts)
 * Panel
   * .config/plasma-org.kde.plasma.desktop-appletsrc
