@@ -36,12 +36,14 @@ kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key webshortcutsE
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key windowsEnabled "false"
 
 #font
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key XftAntialias "true"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key XftHintStyle ""
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key XftSubPixel "rgb"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key fixed "Monospace,9,-1,5,50,0,0,0,0,0"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key font "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key menuFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key shadeSortColumn "true"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key smallestReadableFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key toolBarFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key XftAntialias "true"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key XftHintStyle ""
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key XftSubPixel "rgb"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key fixed "Monospace,9,-1,5,50,0,0,0,0,0"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key font "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key menuFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key shadeSortColumn "true"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key smallestReadableFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
+kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
+
+
