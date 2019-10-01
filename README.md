@@ -4,14 +4,14 @@
 
 
 ---
-* Appearance
+#### Appearance
    * Look and Feel
    * Workspace Theme
    * Colors
    * Fonts
    * Icons
    * Application Style
-* Workspace
+#### Workspace
    * Desktop behaviour
    * Window Manager
    * Shortcuts
@@ -23,17 +23,17 @@
    * Search
       * Plasma Search
          * .config/krunnerrc
-* Personalization
+#### Personalization
    * Account Details
    * Notifications
    * Regional Settings
    * Accessibility
    * Applications
-* Network
+#### Network
    * Connections
    * Settings
    * Bluetooth
-* Hardware
+#### Hardware
    * Inoput Deivces
    * Display and Monitor
    * Multimedia
