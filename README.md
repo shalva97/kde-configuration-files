@@ -9,11 +9,17 @@
    * Workspace Theme
    * Colors
    * Fonts
+      * Fonts
+         * .config/kdeglobals
    * Icons
    * Application Style
 #### Workspace
    * Desktop behaviour
    * Window Manager
+      * Window  Behaviour
+         * .config/kwnirc
+      * Window Rules
+         * .config/kwinrulesrc
    * Shortcuts
       * Custom Shortcuts
          * .config/khotkeys
@@ -35,8 +41,19 @@
    * Bluetooth
 #### Hardware
    * Inoput Deivces
+      * Keyboard
+         * Hardware
+            * ./config/kcminputrc
+         * layout
+            * TODO
+         * Advanced
+            * ./config/kxkbrc
    * Display and Monitor
+      * Gamma
+         * .config/kgammarc
    * Multimedia
    * Power Management
+      * Energy Saving
+         * ./config/powermanagementprofilesrc
    * KDE Connect
    * Removable Storage
