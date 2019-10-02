@@ -15,6 +15,8 @@
    * Application Style
 #### Workspace
    * Desktop behaviour
+      * Workspace
+         * .config/plasmarc
    * Window Manager
       * Window  Behaviour
          * .config/kwnirc
