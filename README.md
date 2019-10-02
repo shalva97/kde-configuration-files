@@ -25,8 +25,11 @@
    * Fonts
       * Fonts
          * .config/kdeglobals
+         * .config/kcmfonts
    * Icons
+      * .config/kdeglobals [Icons]
    * Application Style
+      * .config/kdeglobals
 #### Workspace
    * Desktop behaviour
       * Workspace
