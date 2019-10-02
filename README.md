@@ -34,6 +34,7 @@ powermanagementprofilesrc
 startupconfig
 startupconfigfiles
 startupconfigkeys
+krunnerrc
 systemsettingsrc`
 
 
