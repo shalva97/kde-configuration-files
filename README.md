@@ -26,12 +26,18 @@
       * Global Shortcuts
          * .config/kglobalshortcutsrc
    * Startup and Shutdown
+      * Startup and Shutdown
+         * Background Services
+             *  .config/kded5rc
+          * Desktop Session
+             * .config/ksmserverrc
    * Search
       * Plasma Search
          * .config/krunnerrc
 #### Personalization
    * Account Details
    * Notifications
+      * .config/plasmanotifyrc
    * Regional Settings
    * Accessibility
    * Applications
