@@ -6,8 +6,23 @@
 ---
 #### Appearance
    * Look and Feel
+      * .config/kcminputrc
+      * .config/kdeglobals
+      * .config/kscreenlockerrc
+      * .config/ksplashrc
+      * .config/kwinrc
+     * .config/plasmarc
    * Workspace Theme
+      * Splash Screen
+         * .config/ksplashrc
+      * Plasma Theme
+         * .config/plasmarc
+      * Cursors
+         * .config/kcminputrc
    * Colors
+       * .config/kdeglobals
+       * .config/Trolltech.conf
+
    * Fonts
       * Fonts
          * .config/kdeglobals
@@ -22,6 +37,8 @@
          * .config/kwnirc
       * Window Rules
          * .config/kwinrulesrc
+      * Screen Edges
+         * .config/kwinrc [ElectricBorders]
    * Shortcuts
       * Custom Shortcuts
          * .config/khotkeys
