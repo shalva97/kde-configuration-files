@@ -26,14 +26,15 @@
       * Global Shortcuts
          * .config/kglobalshortcutsrc
    * Startup and Shutdown
-      * Startup and Shutdown
-         * Background Services
-             *  .config/kded5rc
-          * Desktop Session
-             * .config/ksmserverrc
+      * Background Services
+          *  .config/kded5rc
+       * Desktop Session
+          * .config/ksmserverrc
    * Search
       * Plasma Search
          * .config/krunnerrc
+      * File Search
+         * .config/baloofilerc
 #### Personalization
    * Account Details
    * Notifications
