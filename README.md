@@ -1,4 +1,43 @@
 # KDE config file paths
+
+Delete all (i hope) config files: `rm Trolltech.conf
+akregatorrc
+baloofilerc
+bluedevilglobalrc
+kactivitymanagerd-statsrc
+kactivitymanagerdrc
+kateschemarc
+kcmfonts
+kcminputrc
+kconf_updaterc
+kded5rc
+kdeglobals
+kfontinstuirc
+kglobalshortcutsrc
+khotkeysrc
+kmixctrlrc
+kmixrc
+kscreenlockerrc
+ksmserverrc
+ksplashrc
+ktimezonedrc
+kwinrc
+kwinrulesrc
+mimeapps.list
+pavucontrol.ini
+plasma-localerc
+plasma-nm
+plasma-org.kde.plasma.desktop-appletsrc
+plasmarc
+plasmashellrc
+powermanagementprofilesrc
+startupconfig
+startupconfigfiles
+startupconfigkeys
+systemsettingsrc
+trashrc`
+
+
 * Panel
   * .config/plasma-org.kde.plasma.desktop-appletsrc
 
