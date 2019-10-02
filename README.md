@@ -34,8 +34,7 @@ powermanagementprofilesrc
 startupconfig
 startupconfigfiles
 startupconfigkeys
-systemsettingsrc
-trashrc`
+systemsettingsrc`
 
 
 * Panel
