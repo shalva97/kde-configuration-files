@@ -22,7 +22,6 @@
    * Colors
        * .config/kdeglobals
        * .config/Trolltech.conf
-
    * Fonts
       * Fonts
          * .config/kdeglobals
