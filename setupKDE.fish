@@ -98,3 +98,8 @@ kwriteconfig5 --file $HOME/.config/kcminputrc --group Module-remotenotifier --ke
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Module-statusnotifierwatcher --key autoload "true"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Module-touchpad --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group PlasmaBrowserIntegration --key shownCount "1"
+
+#disable annoying sound and notification when changing volume
+kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
+kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay "-1"
+
