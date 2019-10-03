@@ -50,5 +50,13 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont 
 #remove examples in custom shortcuts
 set HOTKEYRC $HOME/.config/khotkeysrc
 if test -e HOTKEYRC
-  rm HOTKEYRC
+  echo "" > HOTKEYRC
 end
+
+#todo set keys...
+
+#keyboard settings
+kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key KeyboardRepeating "0"
+kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key NumLock "2"
+kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatDelay "300"
+kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatRate "50"
