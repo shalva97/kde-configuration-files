@@ -23,8 +23,6 @@ ksplashrc
 ktimezonedrc
 kwinrc
 kwinrulesrc
-mimeapps.list
-pavucontrol.ini
 plasma-localerc
 plasma-nm
 plasma-org.kde.plasma.desktop-appletsrc
