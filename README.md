@@ -69,6 +69,8 @@ systemsettingsrc`
       * .config/kdeglobals [Icons]
    * Application Style
       * .config/kdeglobals
+      * Window Decorations
+         * .config/kwinrc
 #### Workspace
    * Desktop behaviour
       * Workspace
