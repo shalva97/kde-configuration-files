@@ -46,4 +46,9 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key shadeSortCol
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key smallestReadableFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
 
-
+#keybindings
+#remove examples in custom shortcuts
+set HOTKEYRC $HOME/.config/khotkeysrc
+if test -e HOTKEYRC
+  rm HOTKEYRC
+end
