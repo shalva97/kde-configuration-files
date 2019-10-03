@@ -101,6 +101,7 @@ systemsettingsrc`
       * .config/plasmanotifyrc
    * Regional Settings
    * Accessibility
+      * .config/kaccessrc
    * Applications
 #### Network
    * Connections
