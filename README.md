@@ -103,6 +103,8 @@ systemsettingsrc`
    * Accessibility
       * .config/kaccessrc
    * Applications
+      * Default Applications
+         * .config/kdeglobals
 #### Network
    * Connections
    * Settings
