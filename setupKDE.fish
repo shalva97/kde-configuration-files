@@ -68,6 +68,7 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont 
 
 #keybindings
 #remove examples in custom shortcuts
+# doesnot work it gets overwritten... :(
 set HOTKEYRC $HOME/.config/khotkeysrc
 if test -e HOTKEYRC
   echo "" > HOTKEYRC
@@ -106,4 +107,4 @@ kwriteconfig5 --file $HOME/.config/kcminputrc --group PlasmaBrowserIntegration -
 
 #disable annoying sound and notification when changing volume
 kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
-kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay "-1"
+kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay "\-1"
