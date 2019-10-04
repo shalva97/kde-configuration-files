@@ -38,8 +38,7 @@ systemsettingsrc`
 
 * Panel
   * .config/plasma-org.kde.plasma.desktop-appletsrc
-
-
+  
 ---
 #### Appearance
    * Look and Feel
@@ -73,13 +72,15 @@ systemsettingsrc`
    * Desktop behaviour
       * Workspace
          * .config/plasmarc
-   * Window Manager
+      * Dekstop Behaviour
+         * [Screen Edges](#screen-edges)
+            * .config/kwinrc
+   * Window Management
       * Window  Behaviour
          * .config/kwnirc
       * Window Rules
          * .config/kwinrulesrc
-      * Screen Edges
-         * .config/kwinrc [ElectricBorders]
+
    * Shortcuts
       * Custom Shortcuts
          * .config/khotkeys
@@ -127,3 +128,29 @@ systemsettingsrc`
          * ./config/powermanagementprofilesrc
    * KDE Connect
    * Removable Storage
+
+## Screen Edges
+### Active Screen Corners and Edges
+corenrs are numbered like this:
+
+7 - 8 - 3
+6 -   - 2
+5 - 4 - 1
+
+actions are defined in [ElectricBorders] and animations are in other groups, probably in [effect-*] and [TabBox]. To Dosable them set their values to 9.
+
+### Window Managemet
+[Windows]
+
+Maximize windows by dragind them to the top of the screen, boolean value
+
+ElectricBorderMaximize: Boolean
+
+Tiling
+
+ElectricBorderTiling: Boolean
+
+
+
+
+
