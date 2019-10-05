@@ -7,15 +7,6 @@ kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWin
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWindow2 "Activate, raise and pass click"
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWindow3 "Activate, raise and pass click"
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWindowWheel "Scroll"
-#disable weird corners
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key Bottom "None"
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key BottomLeft "None"
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key BottomRight "None"
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key Left "None"
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key Right "None"
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key Top "None"
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key TopLeft "None"
-kwriteconfig5 --file $HOME/.config/kwinrc --group ElectricBorders --key TopRight "None"
 #disable stupid touch screen edges and weird corners and thir animations
 kwriteconfig5 --file $HOME/.config/kwinrc --group Effect-Cube --key BorderActivate "9"
 kwriteconfig5 --file $HOME/.config/kwinrc --group Effect-Cube --key BorderActivateCylinder "9"
