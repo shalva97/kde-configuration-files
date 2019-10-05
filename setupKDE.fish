@@ -102,29 +102,18 @@ kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatRate 
 #background services
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-appmenu --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-baloosearchmodule --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-bluedevil --key autoload "true"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-browserintegrationreminder --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-colorcorrectlocationupdater --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-device_automounter --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-freespacenotifier --key autoload "true"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-keyboard --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-khotkeys --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-kscreen --key autoload "true"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-ksysguard --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-ktimezoned --key autoload "true"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-kwrited --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-networkmanagement --key autoload "true"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-networkstatus --key autoload "true"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-plasmavault --key autoload "true"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-proxyscout --key autoload "true"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-remotenotifier --key autoload "true"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-statusnotifierwatcher --key autoload "true"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-touchpad --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group PlasmaBrowserIntegration --key shownCount "1"
-
-
 
 #disable annoying sound and notification when changing volume
 kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
 #kwriteconfig cannot write -1 :(
 #kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay "-1"
+
+#do not restore desktop session
+kwriteconfig5 --file $HOME/.config/ksmserverrc --group General --key loginMode "default"
