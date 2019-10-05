@@ -117,3 +117,6 @@ kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
 
 #do not restore desktop session
 kwriteconfig5 --file $HOME/.config/ksmserverrc --group General --key loginMode "default"
+
+#disable file somthing...
+kwriteconfig5 --file $HOME/.config/baloofilerc --group Basic Settings --key Indexing-Enabled "false"
