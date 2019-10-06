@@ -86,10 +86,10 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont 
 #keybindings
 #remove examples in custom shortcuts
 # doesnot work it gets overwritten... :(
-set HOTKEYRC $HOME/.config/khotkeysrc
-if test -e HOTKEYRC
-  echo "" > HOTKEYRC
-end
+#set HOTKEYRC $HOME/.config/khotkeysrc
+#if test -e HOTKEYRC
+#  echo "" > HOTKEYRC
+#end
 
 #todo set keys...
 
@@ -97,7 +97,7 @@ end
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key KeyboardRepeating "0"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key NumLock "2"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatDelay "300"
-kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatRate "50"
+kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatRate "40"
 
 #background services
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-appmenu --key autoload "false"
@@ -112,8 +112,9 @@ kwriteconfig5 --file $HOME/.config/kded5rc --group Module-touchpad --key autoloa
 
 #disable annoying sound and notification when changing volume
 kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
-#kwriteconfig cannot write -1 :(
-#kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay "-1"
+#kwriteconfig cannot write -1 :( 
+#i found the way, needs an empty space...
+kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay " -1"
 
 #do not restore desktop session
 kwriteconfig5 --file $HOME/.config/ksmserverrc --group General --key loginMode "default"
