@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/local/bin/st tmux new -As main
+Name=tmux
+Comment=simple terminal
+Type=Application
