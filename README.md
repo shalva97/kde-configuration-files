@@ -33,6 +33,7 @@ startupconfig
 startupconfigfiles
 startupconfigkeys
 krunnerrc
+touchpadxlibinputrc
 systemsettingsrc`
 
 
