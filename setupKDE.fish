@@ -135,4 +135,3 @@ kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group Battery --group H
 kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group LowBattery --group HandleButtonEvents --key lidAction "32"
 kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group LowBattery --group HandleButtonEvents --key powerButtonAction "1"
 kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group LowBattery --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent "false"
-©
