@@ -4,3 +4,4 @@ abbr -a t top
 abbr -a u sudo pacman -Syu
 abbr -a n nvim
 abbr -a c conky
+abbr -a r ranger
