@@ -15,4 +15,4 @@ adobe-source-han-sans-tw-fonts
 ranger
 qbittorrent
 xsel
-ncurses5-compat-libs #for vscode C++ formatting
+clang
