@@ -1,2 +1,0 @@
-UUID=<uuid> <pathtomount> ntfs uid=<userid>,gid=<groupid>,umask=0022,sync,auto,rw 0 0
-Use id -u <username> to get the userid and id -g <username> to get the groupid.
