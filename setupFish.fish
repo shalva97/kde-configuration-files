@@ -7,3 +7,4 @@ abbr -a c conky
 abbr -a r ranger
 
 set -U fish_greeting
+set -Ux EDITOR nvim
