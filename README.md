@@ -102,6 +102,10 @@ systemsettingsrc`
    * Notifications
       * .config/plasmanotifyrc
    * Regional Settings
+      * Formats
+         * .config/plasma-localerc
+      * Date & Time
+         * .config/ktimezonedrc
    * Accessibility
       * .config/kaccessrc
    * Applications
@@ -112,24 +116,25 @@ systemsettingsrc`
       * /etc/NetworkManager/system-connections
    * Settings
    * Bluetooth
+      * .config/bluedevilglobalrc
 #### Hardware
-   * Inoput Deivces
+   * Input Deivces
       * Keyboard
          * Hardware
-            * ./config/kcminputrc
+            * .config/kcminputrc
          * layout
             * TODO
          * Advanced
-            * ./config/kxkbrc
+            * .config/kxkbrc
    * Display and Monitor
       * Gamma
          * .config/kgammarc
    * Multimedia
    * Power Management
       * Energy Saving
-         * ./config/powermanagementprofilesrc
+         * .config/powermanagementprofilesrc
    * KDE Connect
-      * ./config/kdeconnect
+      * .config/kdeconnect
    * Removable Storage
 
 ## Screen Edges
