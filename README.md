@@ -39,7 +39,7 @@ systemsettingsrc`
 
 * Panel
   * .config/plasma-org.kde.plasma.desktop-appletsrc
-  
+
 ---
 #### Appearance
    * Look and Feel
@@ -109,6 +109,7 @@ systemsettingsrc`
          * .config/kdeglobals
 #### Network
    * Connections
+      * /etc/NetworkManager/system-connections
    * Settings
    * Bluetooth
 #### Hardware
@@ -128,6 +129,7 @@ systemsettingsrc`
       * Energy Saving
          * ./config/powermanagementprofilesrc
    * KDE Connect
+      * ./config/kdeconnect
    * Removable Storage
 
 ## Screen Edges
@@ -152,8 +154,3 @@ ElectricBorderMaximize: Boolean
 Tiling
 
 ElectricBorderTiling: Boolean
-
-
-
-
-
