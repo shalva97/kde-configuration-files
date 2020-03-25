@@ -84,10 +84,9 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key smallestRead
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
 
 #keybindings
-curl https://raw.githubusercontent.com/shalva97/set-up-files/master/tmux.desktop > $HOME/.local/share/applications/tmux.desktop
-kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "tmux.desktop" --key _k_friendly_name "Launch tmux"
-kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "tmux.desktop" --key _launch "Meta+Return,none,Launch tmux"
-
+#curl https://raw.githubusercontent.com/shalva97/set-up-files/master/tmux.desktop > $HOME/.local/share/applications/tmux.desktop
+#kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "tmux.desktop" --key _k_friendly_name "Launch tmux"
+#kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "tmux.desktop" --key _launch "Meta+Return,none,Launch tmux"
 #todo set keys...
 
 #keyboard settings
