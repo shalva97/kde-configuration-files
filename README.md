@@ -34,7 +34,8 @@ startupconfigfiles
 startupconfigkeys
 krunnerrc
 touchpadxlibinputrc
-systemsettingsrc`
+systemsettingsrc
+kxkbrc`
 
 
 * Panel
