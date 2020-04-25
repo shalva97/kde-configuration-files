@@ -38,7 +38,7 @@ systemsettingsrc
 kxkbrc`
 
 ---
-* Configurations that cannot be changes from GUI
+### Configurations that cannot be changes from GUI
   * hide title bar when windows are maximized
      * [BorderlessMaximizedWindows](#borderless-maximized-windows)
 
