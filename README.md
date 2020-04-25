@@ -87,7 +87,6 @@ kxkbrc
          * `.config/kwnirc`
       * Window Rules
          * `.config/kwinrulesrc`
-
    * Shortcuts
       * Custom Shortcuts
          * `.config/khotkeys`
