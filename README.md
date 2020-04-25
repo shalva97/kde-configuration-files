@@ -38,109 +38,107 @@ systemsettingsrc
 kxkbrc`
 
 ---
-### Configurations that cannot be changes from GUI
+### Configurations that cannot be changed from GUI
   * hide title bar when windows are maximized
      * [BorderlessMaximizedWindows](#borderless-maximized-windows)
 
-
-* Panel
-  * .config/plasma-org.kde.plasma.desktop-appletsrc
-
+#### Panel
+   * `.config/plasma-org.kde.plasma.desktop-appletsrc`
 
 #### Appearance
    * Look and Feel
-      * .config/kcminputrc
-      * .config/kdeglobals
-      * .config/kscreenlockerrc
-      * .config/ksplashrc
-      * .config/kwinrc
-     * .config/plasmarc
+      * `.config/kcminputrc`
+      * `.config/kdeglobals`
+      * `.config/kscreenlockerrc`
+      * `.config/ksplashrc`
+      * `.config/kwinrc`
+      * `.config/plasmarc`
    * Workspace Theme
       * Splash Screen
-         * .config/ksplashrc
+         * `.config/ksplashrc`
       * Plasma Theme
-         * .config/plasmarc
+         * `.config/plasmarc`
       * Cursors
-         * .config/kcminputrc
+         * `.config/kcminputrc`
    * Colors
-       * .config/kdeglobals
-       * .config/Trolltech.conf
+       * `.config/kdeglobals`
+       * `.config/Trolltech.conf`
    * Fonts
       * Fonts
-         * .config/kdeglobals
-         * .config/kcmfonts
+         * `.config/kdeglobals`
+         * `.config/kcmfonts`
    * Icons
-      * .config/kdeglobals [Icons]
+      * `.config/kdeglobals` [Icons]
    * Application Style
-      * .config/kdeglobals
+      * `.config/kdeglobals`
       * Window Decorations
-         * .config/kwinrc
+         * `.config/kwinrc`
 #### Workspace
    * Desktop behaviour
       * Workspace
-         * .config/plasmarc
+         * `.config/plasmarc`
       * Dekstop Behaviour
          * [Screen Edges](#screen-edges)
-            * .config/kwinrc
+            * `.config/kwinrc`
    * Window Management
       * Window  Behaviour
-         * .config/kwnirc
+         * `.config/kwnirc`
       * Window Rules
-         * .config/kwinrulesrc
+         * `.config/kwinrulesrc`
 
    * Shortcuts
       * Custom Shortcuts
-         * .config/khotkeys
+         * `.config/khotkeys`
       * Global Shortcuts
-         * .config/kglobalshortcutsrc
+         * `.config/kglobalshortcutsrc`
    * Startup and Shutdown
       * Background Services
-          *  .config/kded5rc
+          * `.config/kded5rc`
        * Desktop Session
-          * .config/ksmserverrc
+          * `.config/ksmserverrc`
    * Search
       * Plasma Search
-         * .config/krunnerrc
+         * `.config/krunnerrc`
       * File Search
-         * .config/baloofilerc
+         * `.config/baloofilerc`
 #### Personalization
    * Account Details
    * Notifications
-      * .config/plasmanotifyrc
+      * `.config/plasmanotifyrc`
    * Regional Settings
       * Formats
-         * .config/plasma-localerc
+         * `.config/plasma-localerc`
       * Date & Time
-         * .config/ktimezonedrc
+         * `.config/ktimezonedrc`
    * Accessibility
-      * .config/kaccessrc
+      * `.config/kaccessrc`
    * Applications
       * Default Applications
-         * .config/kdeglobals
+         * `.config/kdeglobals`
 #### Network
    * Connections
-      * /etc/NetworkManager/system-connections
+      * `/etc/NetworkManager/system-connections`
    * Settings
    * Bluetooth
-      * .config/bluedevilglobalrc
+      * `.config/bluedevilglobalrc`
 #### Hardware
    * Input Deivces
       * Keyboard
          * Hardware
-            * .config/kcminputrc
+            * `.config/kcminputrc`
          * layout
             * TODO
          * Advanced
-            * .config/kxkbrc
+            * `.config/kxkbrc`
    * Display and Monitor
       * Gamma
-         * .config/kgammarc
+         * `.config/kgammarc`
    * Multimedia
    * Power Management
       * Energy Saving
-         * .config/powermanagementprofilesrc
+         * `.config/powermanagementprofilesrc`
    * KDE Connect
-      * .config/kdeconnect
+      * `.config/kdeconnect`
    * Removable Storage
 
 ## Screen Edges
