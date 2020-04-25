@@ -1,9 +1,7 @@
 # KDE config file paths
 
----
-### Configurations that cannot be changed from GUI
-  * hide title bar when windows are maximized
-     * `kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true`
+### Some useful stuff
+  * [hide title bar when windows are maximized](https://github.com/shalva97/kde-configuration-files/blob/b011186249deb8b3c268d5dab9cb0f84739127b8/setupKDE.fish#L4)
   * [Delete all (i hope) config files](https://github.com/shalva97/kde-configuration-files/blob/master/delete-kde-configuration-files.fish)
 
 #### Panel
