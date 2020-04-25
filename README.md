@@ -1,8 +1,8 @@
-# KDE config file paths
-
 ### Some useful stuff
   * [hide title bar when windows are maximized](https://github.com/shalva97/kde-configuration-files/blob/b011186249deb8b3c268d5dab9cb0f84739127b8/setupKDE.fish#L4)
   * [Delete all (i hope) config files](https://github.com/shalva97/kde-configuration-files/blob/master/delete-kde-configuration-files.fish)
+
+# KDE config file paths
 
 #### Panel
    * `.config/plasma-org.kde.plasma.desktop-appletsrc`
@@ -33,7 +33,7 @@
       * `.config/kdeglobals` [Icons]
    * Application Style
       * `.config/kdeglobals`
-      * Window Decorations
+      * [Window Decorations](#Window-Decorations)
          * `.config/kwinrc`
 #### Workspace
    * Desktop behavior
@@ -114,13 +114,18 @@ Corners are numbered like this:
 
 actions are defined in [ElectricBorders] and animations are in other groups, probably in \[effect-\*] and \[TabBox\]. To Disable them run these [commands](https://github.com/shalva97/kde-configuration-files/blob/574b6410b736827eb3f016b5d34db1a65d4e3a59/setupKDE.fish#L10-L28)
 
-### Window Management
-[Windows]
+##Window Decorations
+Buttons on the title bar can be customized by these [commands](https://github.com/shalva97/kde-configuration-files/blob/e27e4211f7531d316108f50adddcf4e0e84d1fb1/setupKDE.fish#L43-L44)
 
-Maximize windows by dragging them to the top of the screen, boolean value
-
-ElectricBorderMaximize: Boolean
-
-Tiling
-
-ElectricBorderTiling: Boolean
+list of symbol meaning:
+  * N - Application Menu
+  * S - On all desktops
+  * H - Context help
+  * L - Shade
+  * B - Keep below
+  * F - Keep above
+  * M - Menu
+  * I - Minimize
+  * A - Maximize
+  * X - Close
+  
