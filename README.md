@@ -76,14 +76,14 @@ kxkbrc
       * Window Decorations
          * `.config/kwinrc`
 #### Workspace
-   * Desktop behaviour
+   * Desktop behavior
       * Workspace
          * `.config/plasmarc`
-      * Dekstop Behaviour
+      * Desktop behavior
          * [Screen Edges](#screen-edges)
             * `.config/kwinrc`
    * Window Management
-      * Window  Behaviour
+      * Window  behavior
          * `.config/kwnirc`
       * Window Rules
          * `.config/kwinrulesrc`
@@ -123,7 +123,7 @@ kxkbrc
    * Bluetooth
       * `.config/bluedevilglobalrc`
 #### Hardware
-   * Input Deivces
+   * Input Devices
       * Keyboard
          * Hardware
             * `.config/kcminputrc`
@@ -144,7 +144,7 @@ kxkbrc
 
 ## Screen Edges
 ### Active Screen Corners and Edges
-corenrs are numbered like this:
+Corners are numbered like this:
 
 ```
 7 - 8 - 3
@@ -152,12 +152,12 @@ corenrs are numbered like this:
 5 - 4 - 1
 ```
 
-actions are defined in [ElectricBorders] and animations are in other groups, probably in \[effect-\*] and \[TabBox\]. To Dosable them run these [commands](https://github.com/shalva97/kde-configuration-files/blob/de8f766da881fd6de828c3ecbbeb48d8bc25fd79/setupKDE.fish#L10-L24)
+actions are defined in [ElectricBorders] and animations are in other groups, probably in \[effect-\*] and \[TabBox\]. To Disable them run these [commands](https://github.com/shalva97/kde-configuration-files/blob/de8f766da881fd6de828c3ecbbeb48d8bc25fd79/setupKDE.fish#L10-L24)
 
-### Window Managemet
+### Window Management
 [Windows]
 
-Maximize windows by dragind them to the top of the screen, boolean value
+Maximize windows by dragging them to the top of the screen, boolean value
 
 ElectricBorderMaximize: Boolean
 
