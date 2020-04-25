@@ -1,7 +1,6 @@
 # KDE config file paths
 
-Delete all (i hope) config files: 
-`bash
+Delete all (i hope) config files: `
 rm Trolltech.conf
 akregatorrc
 baloofilerc
