@@ -1,7 +1,7 @@
 # KDE config file paths
 
 Delete all (i hope) config files: 
-```bash
+`bash
 rm Trolltech.conf
 akregatorrc
 baloofilerc
@@ -38,7 +38,7 @@ krunnerrc
 touchpadxlibinputrc
 systemsettingsrc
 kxkbrc
-```
+`
 
 ---
 ### Configurations that cannot be changed from GUI
