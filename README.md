@@ -112,7 +112,7 @@ Corners are numbered like this:
 5 - 4 - 1
 ```
 
-actions are defined in [ElectricBorders] and animations are in other groups, probably in \[effect-\*] and \[TabBox\]. To Disable them run these [commands](https://github.com/shalva97/kde-configuration-files/blob/de8f766da881fd6de828c3ecbbeb48d8bc25fd79/setupKDE.fish#L10-L24)
+actions are defined in [ElectricBorders] and animations are in other groups, probably in \[effect-\*] and \[TabBox\]. To Disable them run these [commands](https://github.com/shalva97/kde-configuration-files/blob/574b6410b736827eb3f016b5d34db1a65d4e3a59/setupKDE.fish#L10-L28)
 
 ### Window Management
 [Windows]
