@@ -1,48 +1,10 @@
 # KDE config file paths
 
-Delete all (i hope) config files: `
-rm Trolltech.conf
-akregatorrc
-baloofilerc
-bluedevilglobalrc
-kactivitymanagerd-statsrc
-kactivitymanagerdrc
-kateschemarc
-kcmfonts
-kcminputrc
-kconf_updaterc
-kded5rc
-kdeglobals
-kfontinstuirc
-kglobalshortcutsrc
-khotkeysrc
-kmixctrlrc
-kmixrc
-kscreenlockerrc
-ksmserverrc
-ksplashrc
-ktimezonedrc
-kwinrc
-kwinrulesrc
-plasma-localerc
-plasma-nm
-plasma-org.kde.plasma.desktop-appletsrc
-plasmarc
-plasmashellrc
-powermanagementprofilesrc
-startupconfig
-startupconfigfiles
-startupconfigkeys
-krunnerrc
-touchpadxlibinputrc
-systemsettingsrc
-kxkbrc
-`
-
 ---
 ### Configurations that cannot be changed from GUI
   * hide title bar when windows are maximized
      * `kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true`
+  * [Delete all (i hope) config files](https://github.com/shalva97/kde-configuration-files/blob/master/delete-kde-configuration-files.fish)
 
 #### Panel
    * `.config/plasma-org.kde.plasma.desktop-appletsrc`
