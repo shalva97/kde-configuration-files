@@ -42,7 +42,7 @@ kxkbrc
 ---
 ### Configurations that cannot be changed from GUI
   * hide title bar when windows are maximized
-     * [BorderlessMaximizedWindows](#borderless-maximized-windows)
+     * `kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true`
 
 #### Panel
    * `.config/plasma-org.kde.plasma.desktop-appletsrc`
@@ -165,7 +165,3 @@ ElectricBorderMaximize: Boolean
 Tiling
 
 ElectricBorderTiling: Boolean
-
-## Borderless maximized windows
-
-`kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true`
