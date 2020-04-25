@@ -114,7 +114,7 @@ Corners are numbered like this:
 
 actions are defined in [ElectricBorders] and animations are in other groups, probably in \[effect-\*] and \[TabBox\]. To Disable them run these [commands](https://github.com/shalva97/kde-configuration-files/blob/574b6410b736827eb3f016b5d34db1a65d4e3a59/setupKDE.fish#L10-L28)
 
-##Window Decorations
+## Window Decorations
 Buttons on the title bar can be customized by these [commands](https://github.com/shalva97/kde-configuration-files/blob/e27e4211f7531d316108f50adddcf4e0e84d1fb1/setupKDE.fish#L43-L44)
 
 list of symbol meaning:
