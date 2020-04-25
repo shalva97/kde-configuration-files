@@ -37,11 +37,16 @@ touchpadxlibinputrc
 systemsettingsrc
 kxkbrc`
 
+---
+* Configurations that cannot be changes from GUI
+  * hide title bar when windows are maximized
+     * [BorderlessMaximizedWindows](#borderless-maximized-windows)
+
 
 * Panel
   * .config/plasma-org.kde.plasma.desktop-appletsrc
 
----
+
 #### Appearance
    * Look and Feel
       * .config/kcminputrc
@@ -160,3 +165,7 @@ ElectricBorderMaximize: Boolean
 Tiling
 
 ElectricBorderTiling: Boolean
+
+## Borderless maximized windows
+
+`kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true`
