@@ -1,7 +1,8 @@
-###kcmshell5
+
+### kcmshell5
 A tool to start single system settings modules
 
-#####examples:
+##### examples:
 open settings module:
 `kcmshell5 fonts`
 
@@ -11,12 +12,12 @@ combine multiple settings modules:
 list of possible arguments
 `kcmshell5 --list`
 
-###plasmawindowed
+### plasmawindowed
 launch kde stuff in windowed mode.
 
 Note: do not include slash at the end of directory
 
-#####examples:
+##### examples:
 
 opens notes:
 `plasmawindowed org.kde.plasma.notes`
