@@ -9,7 +9,7 @@ A tool to start single system settings modules
 * combine multiple settings modules:
 `kcmshell5 fonts kcm_networkmanagement`
 
-* list of possible arguments
+list of possible arguments
 `kcmshell5 --list`
 
 ## plasmawindowed
