@@ -94,6 +94,18 @@ kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key KeyboardRep
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key NumLock "2"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatDelay "300"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatRate "40"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "DisplayNames" ","
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "LayoutList" "ge,us"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "LayoutLoopCount" " -1"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "Model" "pc86"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "Options" "grp:alt_shift_toggle,grp_led:caps"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "ResetOldOptions" "true"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "ShowFlag" "false"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "ShowLabel" "true"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "ShowLayoutIndicator" "true"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "ShowSingle" "false"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "SwitchMode" "Global"
+kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "Use" "true"
 
 #background services
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-appmenu --key autoload "false"
