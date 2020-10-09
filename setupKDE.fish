@@ -52,9 +52,9 @@ kwriteconfig5 --file $HOME/.config/kwinrc  --group "Plugins"  --key "kwin4_effec
 #krunnerrc
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key CharacterRunnerEnabled "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key DictionaryEnabled "false"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key Kill RunnerEnabled "false"
+kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key "Kill RunnerEnabled" "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key PowerDevilEnabled "false"
-kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key Spell CheckerEnabled "false"
+kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key "Spell CheckerEnabled" "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key baloosearchEnabled "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key bookmarksEnabled "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key browsertabsEnabled "false"
