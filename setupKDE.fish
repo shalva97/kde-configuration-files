@@ -116,7 +116,7 @@ kwriteconfig5 --file $HOME/.config/kded5rc --group Module-appmenu --key autoload
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-baloosearchmodule --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-browserintegrationreminder --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-colorcorrectlocationupdater --key autoload "false"
-kwriteconfig5 --file $HOME/.config/kded5rc --group Module-keyboard --key autoload "false"
+#kwriteconfig5 --file $HOME/.config/kded5rc --group Module-keyboard --key autoload "false"
 #kwriteconfig5 --file $HOME/.config/kded5rc --group Module-khotkeys --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-ksysguard --key autoload "false"
 kwriteconfig5 --file $HOME/.config/kded5rc --group Module-kwrited --key autoload "false"
