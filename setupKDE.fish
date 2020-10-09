@@ -44,6 +44,10 @@ kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key But
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnRight "IAX"
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key CloseOnDoubleClickOnMenu "false"
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key ShowToolTips "false"
+#a bit of sugar
+kwriteconfig5 --file $HOME/.config/kwinrc  --group "Plugins"  --key "diminactiveEnabled" "true"
+kwriteconfig5 --file $HOME/.config/kwinrc  --group "Plugins"  --key "fallapartEnabled" "true"
+kwriteconfig5 --file $HOME/.config/kwinrc  --group "Plugins"  --key "kwin4_effect_dimscreenEnabled" "true"
 
 #krunnerrc
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key CharacterRunnerEnabled "false"
