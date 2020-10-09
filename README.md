@@ -39,7 +39,7 @@
       * General behavior
          * `.config/plasmarc`
       * [Screen Edges](#screen-edges)
-            * `.config/kwinrc`
+         * `.config/kwinrc`
       * Desktop Effects
          * `.config/kwinrc`
          * `.config/kglobalshortcutsrc`
