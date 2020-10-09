@@ -116,7 +116,7 @@ kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay "
 kwriteconfig5 --file $HOME/.config/ksmserverrc --group General --key loginMode "default"
 
 #disable file somthing...
-kwriteconfig5 --file $HOME/.config/baloofilerc --group Basic Settings --key Indexing-Enabled "false"
+kwriteconfig5 --file $HOME/.config/baloofilerc --group Basic --key Indexing-Enabled "false"
 
 #touchpad
 kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group "SynPS/2 Synaptics TouchPad" --key tapToClick "true"
