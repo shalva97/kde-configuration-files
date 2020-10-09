@@ -122,12 +122,15 @@ kwriteconfig5 --file $HOME/.config/baloofilerc --group Basic Settings --key Inde
 kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group "SynPS/2 Synaptics TouchPad" --key tapToClick "true"
 
 #powermanagement
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group AC --group HandleButtonEvents --key lidAction "32"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group AC --group HandleButtonEvents --key powerButtonAction "1"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group AC --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent "false"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group Battery --group HandleButtonEvents --key lidAction "32"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group Battery --group HandleButtonEvents --key powerButtonAction "1"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group Battery --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent "false"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group LowBattery --group HandleButtonEvents --key lidAction "32"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group LowBattery --group HandleButtonEvents --key powerButtonAction "1"
-kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group LowBattery --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent "false"
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group HandleButtonEvents  --key lidAction 32
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group HandleButtonEvents  --key powerButtonAction 1
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group HandleButtonEvents  --key triggerLidActionWhenExternalMonitorPresent false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group Battery --group HandleButtonEvents  --key lidAction 32
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group Battery --group HandleButtonEvents  --key powerButtonAction 1
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group Battery --group HandleButtonEvents  --key triggerLidActionWhenExternalMonitorPresent false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group LowBattery --group HandleButtonEvents  --key lidAction 32
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group LowBattery --group HandleButtonEvents  --key powerButtonAction 1
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group LowBattery --group HandleButtonEvents  --key triggerLidActionWhenExternalMonitorPresent false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key idleTime 1200000
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key suspendThenHibernate false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key suspendType 1
