@@ -10,20 +10,18 @@
    * `.config/plasma-org.kde.plasma.desktop-appletsrc`
 
 #### Appearance
-   * Look and Feel
-      * `.config/kcminputrc`
+   * Global Theme
       * `.config/kdeglobals`
       * `.config/kscreenlockerrc`
-      * `.config/ksplashrc`
       * `.config/kwinrc`
+      * `.config/gtkrc`
+      * `.config/gtkrc-2.0`
+   * Plasma Style
       * `.config/plasmarc`
-   * Workspace Theme
-      * Splash Screen
-         * `.config/ksplashrc`
-      * Plasma Theme
-         * `.config/plasmarc`
-      * Cursors
-         * `.config/kcminputrc`
+   * Application Style
+      * `.config/kdeglobals`
+      * [Window Decorations](#Window-Decorations)
+         * `.config/kwinrc`
    * Colors
        * `.config/kdeglobals`
        * `.config/Trolltech.conf`
@@ -33,19 +31,20 @@
          * `.config/kcmfonts`
    * Icons
       * `.config/kdeglobals` [Icons]
-   * Application Style
-      * `.config/kdeglobals`
-      * [Window Decorations](#Window-Decorations)
-         * `.config/kwinrc`
+   * Cursors
+      * `.config/kcminputrc`
+
 #### Workspace
    * Desktop behavior
-      * Workspace
+      * General behavior
          * `.config/plasmarc`
-      * Desktop behavior
-         * [Screen Edges](#screen-edges)
+      * [Screen Edges](#screen-edges)
             * `.config/kwinrc`
+      * Desktop Effects
+         * `.config/kwinrc`
+         * `.config/kglobalshortcutsrc`
    * Window Management
-      * Window  behavior
+      * Window behavior
          * `.config/kwnirc`
       * Window Rules
          * `.config/kwinrulesrc`
