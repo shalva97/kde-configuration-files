@@ -89,7 +89,7 @@
          * Hardware
             * `.config/kcminputrc`
          * layout
-            * TODO
+            * `.config/kxkbrc`
          * Advanced
             * `.config/kxkbrc`
    * Display and Monitor
