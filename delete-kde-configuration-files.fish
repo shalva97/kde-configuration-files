@@ -7,5 +7,7 @@ set -a fileList kscreenlockerrc ksmserverrc ksplashrc ktimezonedrc kwinrc kwinru
 set -a fileList plasma-nm plasma-org.kde.plasma.desktop-appletsrc plasmarc plasmashellrc
 set -a fileList powermanagementprofilesrc startupconfig startupconfigfiles startupconfigkeys
 set -a fileList krunnerrc touchpadxlibinputrc systemsettingsrc kxkbrc
+set -a fileList kde.org/* kiorc klipperrc knfsshare kuriikwsfilterrc kwalletmanager5rc kwalletrc
+set -a fileList plasma.emojierrc plasmanotifyrc PlasmaUserFeedback powerdevilrc kgammarc
 
 rm $fileList
