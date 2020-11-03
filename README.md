@@ -102,6 +102,9 @@
    * KDE Connect
       * `.config/kdeconnect`
    * Removable Storage
+      * `.config/device_automounter_kcmrc`
+      * `.config/kded5rc`
+      * `.config/kded_device_automounterrc`
 
 ## Screen Edges
 ### Active Screen Corners and Edges
