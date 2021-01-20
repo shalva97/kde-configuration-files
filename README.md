@@ -45,7 +45,7 @@
          * `.config/kglobalshortcutsrc`
    * Window Management
       * Window behavior
-         * `.config/kwnirc`
+         * `.config/kwinrc`
       * Window Rules
          * `.config/kwinrulesrc`
    * Shortcuts
