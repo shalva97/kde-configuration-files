@@ -131,7 +131,7 @@ kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-khotkeys"  --key "au
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-ksysguard"  --key "autoload" "false"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-ktimezoned"  --key "autoload" "true"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-kwrited"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-networkmanagement"  --key "autoload" "false"
+kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-networkmanagement"  --key "autoload" "true"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-networkstatus"  --key "autoload" "true"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-proxyscout"  --key "autoload" "true"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-remotenotifier"  --key "autoload" "true"
