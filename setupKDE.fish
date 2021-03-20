@@ -167,3 +167,6 @@ kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group LowBattery
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key idleTime 1200000
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key suspendThenHibernate false
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key suspendType 1
+
+#hide files and folders on desktop
+sed -i 's/plugin=org.kde.plasma.folder/plugin=org.kde.desktopcontainment/g' $HOME/.config/plasma-org.kde.plasma.desktop-appletsrc
