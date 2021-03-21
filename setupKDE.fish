@@ -137,7 +137,7 @@ kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-remotenotifier"  --k
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-statusnotifierwatcher"  --key "autoload" "true"
 #kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-touchpad"  --key "autoload" "false"
 
-#disable annoying sound and notification when changing volume
+#disable annoying notification when changing volume
 kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
 #kwriteconfig cannot write -1 :( 
 #i found the way, needs an empty space...
@@ -153,18 +153,21 @@ kwriteconfig5 --file $HOME/.config/baloofilerc --group "Basic Settings" --key In
 kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group "SynPS/2 Synaptics TouchPad" --key tapToClick "true"
 
 #powermanagement
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group HandleButtonEvents  --key lidAction 32
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group HandleButtonEvents  --key powerButtonAction 1
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group HandleButtonEvents  --key triggerLidActionWhenExternalMonitorPresent false
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group Battery --group HandleButtonEvents  --key lidAction 32
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group Battery --group HandleButtonEvents  --key powerButtonAction 1
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group Battery --group HandleButtonEvents  --key triggerLidActionWhenExternalMonitorPresent false
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group LowBattery --group HandleButtonEvents  --key lidAction 32
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group LowBattery --group HandleButtonEvents  --key powerButtonAction 1
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group LowBattery --group HandleButtonEvents  --key triggerLidActionWhenExternalMonitorPresent false
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key idleTime 1200000
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key suspendThenHibernate false
-kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc  --group AC --group SuspendSession  --key suspendType 1
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group HandleButtonEvents --key lidAction 32
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group HandleButtonEvents --key powerButtonAction 1
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group Battery --group HandleButtonEvents --key lidAction 32
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group Battery --group HandleButtonEvents --key powerButtonAction 1
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group Battery --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group LowBattery --group HandleButtonEvents --key lidAction 32
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group LowBattery --group HandleButtonEvents --key powerButtonAction 1
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group LowBattery --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group SuspendSession  --key idleTime 1200000
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group SuspendSession  --key suspendThenHibernate false
+kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group SuspendSession  --key suspendType 1
 
 #hide files and folders on desktop
 sed -i 's/plugin=org.kde.plasma.folder/plugin=org.kde.desktopcontainment/g' $HOME/.config/plasma-org.kde.plasma.desktop-appletsrc
+
+#disable kwallet
+kwriteconfig5 --file $HOME/.config/kwalletrc --group "Wallet" --key "Enabled" "false"
