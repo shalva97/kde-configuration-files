@@ -88,8 +88,6 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key smallestRead
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
 
 #keybindings
-#disable CTRL+ALT+L logout
-kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "ksmserver"  --key "Lock Session" "Screensaver\tMeta+L,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session"
 #Meta+Z for US, Meta+X for georgian, Meta+C for russian
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to English (US)" "Meta+Z,none,Switch keyboard layout to English (US)"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to Georgian" "Meta+X,none,Switch keyboard layout to Georgian"
