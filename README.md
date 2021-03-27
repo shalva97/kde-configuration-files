@@ -16,23 +16,32 @@
       * `.config/kwinrc`
       * `.config/gtkrc`
       * `.config/gtkrc-2.0`
-   * Plasma Style
-      * `.config/plasmarc`
+      * `.config/gtk-4.0/*`
+      * `.config/gtk-3.0/*`
+      * `.config/ksplashrc`
    * Application Style
       * `.config/kdeglobals`
       * [Window Decorations](#Window-Decorations)
-         * `.config/kwinrc`
+         * `.config/kwinrc`  
+   * Plasma Style
+      * `.config/plasmarc`
    * Colors
        * `.config/kdeglobals`
        * `.config/Trolltech.conf`
+   * Window decorations
+	   * `.config/breezerc`  (or your theme name)
+	   * `.config/kwinrc`
    * Fonts
-      * Fonts
-         * `.config/kdeglobals`
-         * `.config/kcmfonts`
+       * `.config/kdeglobals`
+       * `.config/kcmfonts`
    * Icons
       * `.config/kdeglobals` [Icons]
    * Cursors
       * `.config/kcminputrc`
+   * Font management
+	   * `.config/kfontinstuirc`
+   * Splash screen
+	   * `.config/ksplashrc`
 
 #### Workspace
    * Desktop behavior
