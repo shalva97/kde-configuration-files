@@ -21,8 +21,6 @@
       * `.config/ksplashrc`
    * Application Style
       * `.config/kdeglobals`
-      * [Window Decorations](#Window-Decorations)
-         * `.config/kwinrc`  
    * Plasma Style
       * `.config/plasmarc`
    * Colors
@@ -52,62 +50,91 @@
       * Desktop Effects
          * `.config/kwinrc`
          * `.config/kglobalshortcutsrc`
+	 * Touch screen
+	 * Virtual desktops
+	 * Activities
    * Window Management
       * Window behavior
          * `.config/kwinrc`
       * Window Rules
          * `.config/kwinrulesrc`
+	 * Task switcher
+	 * KWin scripts
    * Shortcuts
       * Custom Shortcuts
          * `.config/khotkeys`
       * Global Shortcuts
          * `.config/kglobalshortcutsrc`
    * Startup and Shutdown
+	  * Login screen
+	  * Autostart
       * Background Services
           * `.config/kded5rc`
        * Desktop Session
           * `.config/ksmserverrc`
    * Search
-      * Plasma Search
+      * KRunner
          * `.config/krunnerrc`
       * File Search
          * `.config/baloofilerc`
+	 * Web Search Keywords
 #### Personalization
-   * Account Details
    * Notifications
       * `.config/plasmanotifyrc`
+   * Users
    * Regional Settings
-      * Formats
-         * `.config/plasma-localerc`
-      * Date & Time
-         * `.config/ktimezonedrc`
+	   * Language
+       * Formats
+           * `.config/plasma-localerc`
+	   * Spell Check
+       * Date & Time
+           * `.config/ktimezonedrc`
    * Accessibility
       * `.config/kaccessrc`
    * Applications
-      * Default Applications
-         * `.config/kdeglobals`
+	   * File associations
+	   * Locations
+	   * Launch Feedback
+       * Default Applications
+           * `.config/kdeglobals`
+   * KDE Wallet
+   * Online Accounts
+   * User Feedback
+	   * `.config/PlasmaUserFeedback`
 #### Network
    * Connections
       * `/etc/NetworkManager/system-connections`
    * Settings
-   * Bluetooth
-      * `.config/bluedevilglobalrc`
+	   * Proxy
+	   * Connection Preferences
+	   * SSL Preferences
+	   * Cache
+	   * Cookies
+	   * Browser Identification
+	   * Windows Shares
 #### Hardware
    * Input Devices
-      * Keyboard
-         * Hardware
-            * `.config/kcminputrc`
-         * layout
-            * `.config/kxkbrc`
-         * Advanced
-            * `.config/kxkbrc`
+       * Keyboard
+           * Hardware
+               * `.config/kcminputrc`
+           * layout
+               * `.config/kxkbrc`
+           * Advanced
+               * `.config/kxkbrc`
+	   * Mouse
+	   * Game Constroller
+	   * Touchpad
    * Display and Monitor
-      * Gamma
-         * `.config/kgammarc`
-   * Multimedia
+	   * Compositor
+       * Gamma
+		   * `.config/kgammarc`
+	   * Night Color
+   * Audio
    * Power Management
       * Energy Saving
          * `.config/powermanagementprofilesrc`
+   * Bluetooth
+      * `.config/bluedevilglobalrc`
    * KDE Connect
       * `.config/kdeconnect`
    * Removable Storage
