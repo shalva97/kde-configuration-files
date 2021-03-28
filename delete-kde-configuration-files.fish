@@ -10,5 +10,6 @@ set -a fileList krunnerrc touchpadxlibinputrc systemsettingsrc kxkbrc
 set -a fileList kde.org/* kiorc klipperrc knfsshare kuriikwsfilterrc kwalletmanager5rc kwalletrc
 set -a fileList plasma.emojierrc plasmanotifyrc PlasmaUserFeedback powerdevilrc kgammarc
 set -a fileList kded_device_automounterrc device_automounter_kcmrc
+set -a fileList breezerc
 
 rm $fileList
