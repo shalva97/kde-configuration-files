@@ -169,3 +169,13 @@ sed -i 's/plugin=org.kde.plasma.folder/plugin=org.kde.desktopcontainment/g' $HOM
 
 #disable kwallet
 kwriteconfig5 --file $HOME/.config/kwalletrc --group "Wallet" --key "Enabled" "false"
+
+# theme settings - disable title bar for all windows but keep borders
+kwriteconfig5 --file $HOME/.config/breezerc --group "Common" --key "OutlineCloseButton" "false"
+kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco" --key "DrawBackgroundGradient" "false"
+kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key "BorderSize" "3"
+kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key "Enabled" "true"
+kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key "ExceptionPattern" ".*"
+kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key "ExceptionType" "0"
+kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key "HideTitleBar" "true"
+kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key "Mask" "16"
