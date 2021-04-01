@@ -184,3 +184,5 @@ kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key 
 set panelNum (cat $HOME/.config/plasmashellrc | string match --regex Panel\ [0-9] | string match --regex [0-9])[1]
 qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "panels()[$panelNum - 1].height = 30"
 
+# eenable user feedback because why not
+kwriteconfig5 --file $HOME/.config/kde.org/UserFeedback.org.kde.plasmashell.conf --group "UserFeedback" --key "ApplicationStartCount" "7"
