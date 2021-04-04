@@ -1,6 +1,6 @@
 ### Some useful stuff
   * [hide title bar when windows are maximized](https://github.com/shalva97/kde-configuration-files/blob/b011186249deb8b3c268d5dab9cb0f84739127b8/setupKDE.fish#L4)
-  * [Delete all (i hope) config files](https://github.com/shalva97/kde-configuration-files/blob/master/delete-kde-configuration-files.fish)
+  * [Delete all (i hope) config files](https://github.com/shalva97/kde-configuration-files/blob/master/scripts/delete-kde-configuration-files.fish)
   * [kcmshell5 and plasmawindowed](https://github.com/shalva97/kde-configuration-files/blob/master/kcmshell5%20and%20plasmawindowed.md)
   * [dbus events](https://github.com/shalva97/kde-configuration-files/blob/master/qdbus_events.md)
 
