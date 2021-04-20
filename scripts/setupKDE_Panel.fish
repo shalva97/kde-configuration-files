@@ -12,4 +12,12 @@ end
 
 # disable burp sound when changing volume
 ./plasmasetconfig.py org.kde.plasma.volume General volumeFeedback false
+# clock
 ./plasmasetconfig.py org.kde.plasma.digitalclock Appearance showDate false
+
+# task manager stuff
+./plasmasetconfig.py org.kde.plasma.taskmanager General groupedTaskVisualization 3 # show list of windows when clicking groups
+./plasmasetconfig.py org.kde.plasma.taskmanager General middleClickAction Close
+./plasmasetconfig.py org.kde.plasma.taskmanager General separateLaunchers false
+./plasmasetconfig.py org.kde.plasma.taskmanager General wheelEnabled false
+
