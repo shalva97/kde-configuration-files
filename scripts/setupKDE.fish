@@ -202,6 +202,7 @@ end
 ./plasmasetconfig.py org.kde.plasma.volume General volumeFeedback false
 # clock
 ./plasmasetconfig.py org.kde.plasma.digitalclock Appearance showDate false
+./plasmasetconfig.py org.kde.plasma.digitalclock Appearance use24hFormat 2
 
 # task manager stuff
 ./plasmasetconfig.py org.kde.plasma.taskmanager General groupedTaskVisualization 3 # show list of windows when clicking groups
