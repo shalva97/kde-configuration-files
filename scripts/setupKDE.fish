@@ -1,13 +1,13 @@
-#!/usr/bin/fish
+#!/usr/bin/env fish
 
-#kwinrc
+# kwinrc
 kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandAllKey Meta
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWindow1 "Activate, raise and pass click"
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWindow2 "Activate, raise and pass click"
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWindow3 "Activate, raise and pass click"
 kwriteconfig5 --file $HOME/.config/kwinrc --group MouseBindings --key CommandWindowWheel "Scroll"
-#disable stupid touch screen edges and weird corners and thir animations
+# disable stupid touch screen edges and weird corners and thir animations
 kwriteconfig5 --file $HOME/.config/kwinrc --group Effect-Cube --key BorderActivate "9"
 kwriteconfig5 --file $HOME/.config/kwinrc --group Effect-Cube --key BorderActivateCylinder "9"
 kwriteconfig5 --file $HOME/.config/kwinrc --group Effect-Cube --key BorderActivateSphere "9"
@@ -38,18 +38,18 @@ kwriteconfig5 --file $HOME/.config/kwinrc --group TouchEdges --key Bottom "None"
 kwriteconfig5 --file $HOME/.config/kwinrc --group TouchEdges --key Left "None"
 kwriteconfig5 --file $HOME/.config/kwinrc --group TouchEdges --key Right "None"
 kwriteconfig5 --file $HOME/.config/kwinrc --group TouchEdges --key Top "None"
-#set titlebar buttons
+# set titlebar buttons
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key BorderSize "Normal"
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnLeft "MF"
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnRight "IAX"
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key CloseOnDoubleClickOnMenu "false"
 kwriteconfig5 --file $HOME/.config/kwinrc --group org.kde.kdecoration2 --key ShowToolTips "false"
-#a bit of sugar
+# a bit of sugar
 kwriteconfig5 --file $HOME/.config/kwinrc  --group "Plugins"  --key "diminactiveEnabled" "true"
 kwriteconfig5 --file $HOME/.config/kwinrc  --group "Plugins"  --key "fallapartEnabled" "true"
 kwriteconfig5 --file $HOME/.config/kwinrc  --group "Plugins"  --key "kwin4_effect_dimscreenEnabled" "true"
 
-#krunnerrc
+# krunnerrc
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key CharacterRunnerEnabled "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key DictionaryEnabled "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key "Kill RunnerEnabled" "false"
@@ -76,7 +76,7 @@ kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key unitconverter
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key webshortcutsEnabled "false"
 kwriteconfig5 --file $HOME/.config/krunnerrc --group Plugins --key windowsEnabled "false"
 
-#font
+# font
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key XftAntialias "true"
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key XftHintStyle ""
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key XftSubPixel "rgb"
@@ -87,14 +87,14 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key shadeSortCol
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key smallestReadableFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
 
-#keybindings
-#Meta+Z for US, Meta+X for georgian, Meta+C for russian
+# keybindings
+# Meta+Z for US, Meta+X for georgian, Meta+C for russian
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to English (US)" "Meta+Z,none,Switch keyboard layout to English (US)"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to Georgian" "Meta+X,none,Switch keyboard layout to Georgian"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to Russian (phonetic, Windows)" "Meta+C,none,Switch keyboard layout to Russian (phonetic\\, Windows)"
-#better to use sxhkd for other keybindings
+# better to use sxhkd for other keybindings
 
-#keyboard settings
+# keyboard settings
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key KeyboardRepeating "0"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key NumLock "2"
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key RepeatDelay "300"
@@ -112,7 +112,7 @@ kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "ShowSingle" 
 kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "SwitchMode" "WinClass"
 kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "Use" "true"
 
-#background services
+# background services
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-appmenu"  --key "autoload" "false"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-baloosearchmodule"  --key "autoload" "false"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-bluedevil"  --key "autoload" "true"
@@ -135,22 +135,22 @@ kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-remotenotifier"  --k
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-statusnotifierwatcher"  --key "autoload" "true"
 #kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-touchpad"  --key "autoload" "false"
 
-#disable annoying notification when changing volume
+# disable annoying notification when changing volume
 kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
-#kwriteconfig cannot write -1 :( 
-#i found the way, needs an empty space...
+# kwriteconfig cannot write -1 :( 
+# i found the way, needs an empty space...
 kwriteconfig5 --file $HOME/.config/plasmarc --group PlasmaToolTips --key Delay " -1"
 
-#do not restore desktop session
+# do not restore desktop session
 kwriteconfig5 --file $HOME/.config/ksmserverrc --group General --key loginMode "default"
 
-#disable file somthing...
+# disable file somthing...
 kwriteconfig5 --file $HOME/.config/baloofilerc --group "Basic Settings" --key Indexing-Enabled "false"
 
-#touchpad
+# touchpad
 kwriteconfig5 --file $HOME/.config/touchpadxlibinputrc --group "SynPS/2 Synaptics TouchPad" --key tapToClick "true"
 
-#powermanagement
+# powermanagement
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group HandleButtonEvents --key lidAction 32
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group HandleButtonEvents --key powerButtonAction 1
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group HandleButtonEvents --key triggerLidActionWhenExternalMonitorPresent false
@@ -164,10 +164,10 @@ kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group 
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group SuspendSession  --key suspendThenHibernate false
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group SuspendSession  --key suspendType 1
 
-#hide files and folders on desktop
+# hide files and folders on desktop
 sed -i 's/plugin=org.kde.plasma.folder/plugin=org.kde.desktopcontainment/g' $HOME/.config/plasma-org.kde.plasma.desktop-appletsrc
 
-#disable kwallet
+# disable kwallet
 kwriteconfig5 --file $HOME/.config/kwalletrc --group "Wallet" --key "Enabled" "false"
 
 # theme settings - disable title bar for all windows but keep borders
@@ -210,3 +210,8 @@ end
 ./plasmasetconfig.py org.kde.plasma.taskmanager General separateLaunchers false
 ./plasmasetconfig.py org.kde.plasma.taskmanager General wheelEnabled false
 
+# lock screen wallpaper
+set lock_screen_wallpaper (xdg-user-dir PICTURES)/lock-screen-wallpaper.jpg
+if test -e $lock_screen_wallpaper
+    kwriteconfig5 --file $HOME/.config/kscreenlockerrc --group "Greeter" --group "Wallpaper" --group "org.kde.image" --group "General" --key "Image" "file://$lock_screen_wallpaper"
+end
