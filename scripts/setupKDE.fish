@@ -92,6 +92,10 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont 
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to English (US)" "Meta+Z,none,Switch keyboard layout to English (US)"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to Georgian" "Meta+X,none,Switch keyboard layout to Georgian"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to Russian (phonetic, Windows)" "Meta+C,none,Switch keyboard layout to Russian (phonetic\\, Windows)"
+# klipper - unbind few keys and use alt + v for pop up
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "plasmashell" --key "clipboard_action" "none,Ctrl+Alt+X,Enable Clipboard Actions"
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "plasmashell" --key "repeat_action" "none,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard"
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "plasmashell" --key "show-on-mouse-pos" "Alt+V,none,Open Klipper at Mouse Position"
 # better to use sxhkd for other keybindings
 
 # keyboard settings
