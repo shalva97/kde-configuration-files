@@ -142,6 +142,17 @@
       * `.config/device_automounter_kcmrc`
       * `.config/kded5rc`
       * `.config/kded_device_automounterrc`
+## changing appearance
+
+### on plasma 5.22 and above you can use this self-explanatory commands to change appearance
+```
+plasma-apply-colorscheme
+plasma-apply-cursortheme
+plasma-apply-desktoptheme
+plasma-apply-lookandfeel
+plasma-apply-wallpaperimage
+```
+
 
 ## Screen Edges
 ### Active Screen Corners and Edges
@@ -169,4 +180,3 @@ list of symbol meaning:
   * I - Minimize
   * A - Maximize
   * X - Close
-  
