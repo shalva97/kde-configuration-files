@@ -151,6 +151,10 @@ plasma-apply-cursortheme
 plasma-apply-desktoptheme
 plasma-apply-lookandfeel
 plasma-apply-wallpaperimage
+
+usage example:
+plasma-apply-desktoptheme --list-themes
+plasma-apply-desktoptheme breeze-dark
 ```
 
 
