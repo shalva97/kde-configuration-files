@@ -1,4 +1,9 @@
-#!/usr/bin/env fish
+#! /usr/bin/env nix-shell
+#! nix-shell -i fish -p python39 python39Packages.dbus-python
+
+# TODO - remove qdbus usage
+
+#!/usr/bin/env fish   # without nix-shell
 
 # kwinrc
 kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
@@ -192,15 +197,6 @@ qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "panel
 kwriteconfig5 --file $HOME/.config/kde.org/UserFeedback.org.kde.plasmashell.conf --group "UserFeedback" --key "ApplicationStartCount" "7"
 
 # panel settings
-# credit goes to Zren https://gist.github.com/Zren/764f17c26be4ea0e088f4a6a1871f528 give him a star!!
-
-set script plasmasetconfig.py
-
-if test ! -e $script
-    echo downloading script
-    curl "https://gist.githubusercontent.com/Zren/764f17c26be4ea0e088f4a6a1871f528/raw/fb61ba26bfc44b7ba83bd7450f218504b65858ca/plasmasetconfig.py" > $script
-    chmod +x $script
-end
 
 # disable burp sound when changing volume
 ./plasmasetconfig.py org.kde.plasma.volume General volumeFeedback false
