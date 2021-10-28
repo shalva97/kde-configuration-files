@@ -37,6 +37,8 @@
       * `.config/kdeglobals` [Icons]
    * Cursors
       * `.config/kcminputrc`
+   * Launch Feedback
+      * `.config/klaunchrc`
    * Font management
 	   * `.config/kfontinstuirc`
    * Splash screen
@@ -51,24 +53,25 @@
       * Desktop Effects
          * `.config/kwinrc`
          * `.config/kglobalshortcutsrc`
-	 * Touch screen
-	 * Virtual desktops
-	 * Activities
+      * Touch screen
+      * Screen Locking
+      * Virtual desktops
+      * Activities
    * Window Management
       * Window behavior
          * `.config/kwinrc`
       * Window Rules
          * `.config/kwinrulesrc`
-	 * Task switcher
-	 * KWin scripts
+      * Task switcher
+      * KWin scripts
    * Shortcuts
       * Custom Shortcuts
          * `.config/khotkeys`
       * Global Shortcuts
          * `.config/kglobalshortcutsrc`
    * Startup and Shutdown
-	  * Login screen
-	  * Autostart
+	   * Login screen
+	   * Autostart
       * Background Services
           * `.config/kded5rc`
        * Desktop Session
@@ -78,26 +81,27 @@
          * `.config/krunnerrc`
       * File Search
          * `.config/baloofilerc`
-	 * Web Search Keywords
+	   * Web Search Keywords
+
 #### Personalization
    * Notifications
       * `.config/plasmanotifyrc`
    * Users
    * Regional Settings
 	   * Language
-       * Formats
-           * `.config/plasma-localerc`
+      * Formats
+         * `.config/plasma-localerc`
 	   * Spell Check
-       * Date & Time
-           * `.config/ktimezonedrc`
+      * Date & Time
+         * `.config/ktimezonedrc`
    * Accessibility
       * `.config/kaccessrc`
    * Applications
 	   * File associations
 	   * Locations
 	   * Launch Feedback
-       * Default Applications
-           * `.config/kdeglobals`
+      * Default Applications
+         * `.config/kdeglobals`
    * KDE Wallet
    * Online Accounts
    * User Feedback
@@ -115,19 +119,19 @@
 	   * Windows Shares
 #### Hardware
    * Input Devices
-       * Keyboard
-           * Hardware
-               * `.config/kcminputrc`
-           * layout
-               * `.config/kxkbrc`
-           * Advanced
-               * `.config/kxkbrc`
+      * Keyboard
+         * Hardware
+            * `.config/kcminputrc`
+         * layout
+            * `.config/kxkbrc`
+         * Advanced
+            * `.config/kxkbrc`
 	   * Mouse
 	   * Game Constroller
 	   * Touchpad
    * Display and Monitor
 	   * Compositor
-       * Gamma
+      * Gamma
 		   * `.config/kgammarc`
 	   * Night Color
    * Audio

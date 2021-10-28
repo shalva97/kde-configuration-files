@@ -1,9 +1,9 @@
-#! /usr/bin/env nix-shell
-#! nix-shell -i fish -p python39 python39Packages.dbus-python
+#! /usr/bin/env fish
 
 # TODO - remove qdbus usage
 
-#!/usr/bin/env fish   # without nix-shell
+#! /usr/bin/env nix-shell
+#! nix-shell -i fish -p python39 python39Packages.dbus-python
 
 # kwinrc
 kwriteconfig5 --file $HOME/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
