@@ -193,7 +193,7 @@ kwriteconfig5 --file $HOME/.config/breezerc --group "Windeco Exception 0" --key 
 qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "panels()[0].height = 30"
 
 # eenable user feedback because why not
-kwriteconfig5 --file $HOME/.config/kde.org/UserFeedback.org.kde.plasmashell.conf --group "UserFeedback" --key "ApplicationStartCount" "7"
+kwriteconfig5 --file $HOME/.config/PlasmaUserFeedback --group "Global" --key "FeedbackLevel" "64"
 
 # panel settings
 
