@@ -93,6 +93,7 @@ kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key smallestRead
 kwriteconfig5 --file $HOME/.config/kdeglobals --group General --key toolBarFont "Cantarell,10,-1,5,50,0,0,0,0,0,Regular"
 
 # keybindings
+./unbind-all-keyboard-shortcuts.fish
 # Meta+Z for US, Meta+X for georgian, Meta+C for russian
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to English (US)" "Meta+Z,none,Switch keyboard layout to English (US)"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Layout Switcher"  --key "Switch keyboard layout to Georgian" "Meta+X,none,Switch keyboard layout to Georgian"
@@ -124,25 +125,25 @@ kwriteconfig5 --file $HOME/.config/kxkbrc  --group "Layout"  --key "Use" "true"
 # background services
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-appmenu"  --key "autoload" "false"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-baloosearchmodule"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-bluedevil"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-bluedevil"  --key "autoload" "true"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-browserintegrationreminder"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-colorcorrectlocationupdater"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-device_automounter"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-freespacenotifier"  --key "autoload" "true"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-gtkconfig"  --key "autoload" "true"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-kded_accounts"  --key "autoload" "true"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-keyboard"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-colorcorrectlocationupdater"  --key "autoload" "false"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-device_automounter"  --key "autoload" "false"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-freespacenotifier"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-gtkconfig"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-kded_accounts"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-keyboard"  --key "autoload" "true"
 kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-khotkeys"  --key "autoload" "false" #sxhkd FTW!!!
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-ksysguard"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-ktimezoned"  --key "autoload" "true"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-kwrited"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-networkmanagement"  --key "autoload" "true"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-networkstatus"  --key "autoload" "true"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-proxyscout"  --key "autoload" "true"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-remotenotifier"  --key "autoload" "true"
-#kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-smbwatcher"  --key "autoload" "false"
-kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-statusnotifierwatcher"  --key "autoload" "true"
-#kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-touchpad"  --key "autoload" "false"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-ksysguard"  --key "autoload" "false"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-ktimezoned"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-kwrited"  --key "autoload" "false"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-networkmanagement"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-networkstatus"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-proxyscout"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-remotenotifier"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-smbwatcher"  --key "autoload" "false"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-statusnotifierwatcher"  --key "autoload" "true"
+# kwriteconfig5 --file $HOME/.config/kded5rc  --group "Module-touchpad"  --key "autoload" "false"
 
 # disable annoying notification when changing volume
 kwriteconfig5 --file $HOME/.config/plasmarc --group OSD --key Enabled "false"
@@ -174,7 +175,8 @@ kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group 
 kwriteconfig5 --file $HOME/.config/powermanagementprofilesrc --group AC --group SuspendSession  --key suspendType 1
 
 # hide files and folders on desktop
-sed -i 's/plugin=org.kde.plasma.folder/plugin=org.kde.desktopcontainment/g' $HOME/.config/plasma-org.kde.plasma.desktop-appletsrc
+# TODO fix this
+# sed -i 's/plugin=org.kde.plasma.folder/plugin=org.kde.desktopcontainment/g' $HOME/.config/plasma-org.kde.plasma.desktop-appletsrc
 
 # disable kwallet
 kwriteconfig5 --file $HOME/.config/kwalletrc --group "Wallet" --key "Enabled" "false"
