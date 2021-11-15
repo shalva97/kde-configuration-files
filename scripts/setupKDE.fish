@@ -102,7 +102,12 @@ kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc  --group "KDE Keyboard Lay
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "plasmashell" --key "clipboard_action" "none,Ctrl+Alt+X,Enable Clipboard Actions"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "plasmashell" --key "repeat_action" "none,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard"
 kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "plasmashell" --key "show-on-mouse-pos" "Alt+V,none,Open Klipper at Mouse Position"
-# better to use sxhkd for other keybindings
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "kmix" --key "decrease_microphone_volume" "Microphone Volume Down,Microphone Volume Down,Decrease Microphone Volume"
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "kmix" --key "decrease_volume" "Volume Down,Volume Down,Decrease Volume"
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "kmix" --key "increase_microphone_volume" "Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume"
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "kmix" --key "increase_volume" "Volume Up,Volume Up,Increase Volume"
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "kmix" --key "mic_mute" "Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone"
+kwriteconfig5 --file $HOME/.config/kglobalshortcutsrc --group "kmix" --key "mute" "Volume Mute,Volume Mute,Mute"
 
 # keyboard settings
 kwriteconfig5 --file $HOME/.config/kcminputrc --group Keyboard --key KeyboardRepeating "0"
