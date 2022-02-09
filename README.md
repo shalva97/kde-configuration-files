@@ -64,6 +64,7 @@
          * `.config/kwinrulesrc`
       * Task switcher
       * KWin scripts
+         * `/usr/share/kwin/scripts`
    * Shortcuts
       * Custom Shortcuts
          * `.config/khotkeys`
