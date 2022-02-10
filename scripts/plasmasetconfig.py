@@ -38,6 +38,7 @@ def writeConfigKey(args):
 		for (var widgetIndex = 0; widgetIndex < widgets.length; widgetIndex++) {
 			var widget = widgets[widgetIndex];
 			callback(widget, containment);
+
 			if (widget.type == "org.kde.plasma.systemtray") {
 				var childContainmentId = widget.readConfig("SystrayContainmentId");
 				if (typeof childContainmentId !== "undefined") {
@@ -49,16 +50,19 @@ def writeConfigKey(args):
 			}
 		}
 	}
+
 	function forEachWidgetInContainmentList(containmentList, callback) {
 		for (var containmentIndex = 0; containmentIndex < containmentList.length; containmentIndex++) {
 			var containment = containmentList[containmentIndex];
 			forEachWidgetInContainment(containment, callback);
 		}
 	}
+
 	function forEachWidget(callback) {
 		forEachWidgetInContainmentList(desktops(), callback);
 		forEachWidgetInContainmentList(panels(), callback);
 	}
+
 	function forEachWidgetByType(type, callback) {
 		forEachWidget(function(widget, containment) {
 			if (widget.type == type) {
@@ -66,6 +70,7 @@ def writeConfigKey(args):
 			}
 		});
 	}
+
 	function widgetSetProperty(args) {
 		if (!(args.widgetType && args.configGroup && args.configKey)) {
 			return;
@@ -76,6 +81,8 @@ def writeConfigKey(args):
 			var newValue = widget.readConfig(args.configKey);
 		});
 	}
+
+
 	var args = {
 		widgetType: "{{widgetType}}",
 		configGroup: "{{configGroup}}",
@@ -118,11 +125,38 @@ def findWidgetDir(namespace):
 
 	return None
 
+def getEntryLabel(text):
+	pattern = r'<label>(.+?)<\/label>'
+	m = re.search(pattern, text)
+	if m:
+		return m.group(1)
+	else:
+		return None
+
 def getEntryDefault(text):
 	pattern = r'<default>(.+?)<\/default>'
 	m = re.search(pattern, text)
 	if m:
 		return m.group(1)
+	else:
+		return None
+
+def getChoiceList(text):
+	pattern = r'<choice ([^>]+)(\/>|>(.+?)<\/choice>)'
+	choiceList = []
+	for m in re.finditer(pattern, text, flags=re.DOTALL):
+		# print(m)
+		attrXml = m.group(1)
+		choiceName = getXmlAttr(attrXml, 'name')
+		choiceList.append(choiceName)
+	return choiceList
+
+
+def getEntryChoices(text):
+	pattern = r'<choices>(.+?)<\/choices>'
+	m = re.search(pattern, text, flags=re.DOTALL)
+	if m:
+		return getChoiceList(m.group(1))
 	else:
 		return None
 
@@ -146,6 +180,8 @@ def iterGroupEntry(text):
 			'name': getXmlAttr(attrXml, 'name'),
 			'type': getXmlAttr(attrXml, 'type'),
 			'default': getEntryDefault(innerXml),
+			'label': getEntryLabel(innerXml) or '',
+			'choices': getEntryChoices(innerXml),
 		}
 		yield entry
 
@@ -196,17 +232,29 @@ def prettyValue(value):
 	else:
 		return value.replace('\"', '\\\"')
 
-def printConfigKey(namespace, group, entry):
-	line = 'plasmasetconfig'
+def formatEntryType(entry):
+	if entry['choices'] is not None:
+		return '{} {}'.format(
+			entry['type'],
+			', '.join('{}={}'.format(i, key) for i,key in enumerate(entry['choices'])),
+		)
+	else:
+		return entry['type']
+
+def printConfigKey(namespace, group, entry, showLabel=False):
+	line = ''
+	if showLabel:
+		line += TC.FG_DARKGREY + '# ' + entry['label'] + TC.RESET + '\n'
+	line += 'plasmasetconfig'
 	line += ' ' + TC.FG_PINK + namespace
 	line += ' ' + TC.FG_LIGHTBLUE + prettyValue(group['name'])
 	line += ' ' + TC.FG_LIGHTGREEN + prettyValue(entry['name'])
 	line += ' ' + TC.FG_YELLOW + prettyValue(entry['default'])
-	line += ' ' + TC.FG_DARKGREY + '# ' + entry['type']
+	line += ' ' + TC.FG_DARKGREY + '# ' + formatEntryType(entry)
 	line += TC.RESET
 	print(line)
 
-def printPackageConfigKeys(namespace):
+def printPackageConfigKeys(namespace, showLabels=False):
 	packageDir = findWidgetDir(namespace)
 	if packageDir is None:
 		print('Could not find a package with the namespace "{}"'.format(namespace))
@@ -223,7 +271,7 @@ def printPackageConfigKeys(namespace):
 
 	for group in iterGroup(text):
 		for entry in group['entries']:
-			printConfigKey(namespace, group, entry)
+			printConfigKey(namespace, group, entry, showLabel=showLabels)
 
 def printPackage(namespace, dirpath):
 	line = 'plasmasetconfig'
@@ -248,24 +296,31 @@ def printNamespaceList():
 #--- Main
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
+	parser.add_argument("-v", "--verbose", action='store_true', help="print config key labels")
 	parser.add_argument("widget", type=str, help="widget namespace eg: 'org.kde.plasma.digitalclock'")
 	parser.add_argument("group", type=str, help="config group")
 	parser.add_argument("key", type=str, help="config key to modify")
 	parser.add_argument("value", type=str, help="new value to store in config key")
 
-	if len(sys.argv) == 1:
+	# Note: "plasmasetconfig.py" is first "arg"
+	flagArgs = list(filter(lambda s: s.startswith('-'), sys.argv))
+	posArgs = list(filter(lambda s: not s.startswith('-'), sys.argv))
+	numPosArgs = len(posArgs)
+
+	if numPosArgs == 1:
 		# plasmasetconfig
 		parser.print_usage()
 		print()
 		printNamespaceList()
 		sys.exit(1)
-	elif (len(sys.argv) == 2 or len(sys.argv) == 3) and sys.argv[1] != '-h':
+	elif numPosArgs == 2 or numPosArgs == 3:
 		# plasmasetconfig [widget]
 		# plasmasetconfig [widget] [group]
-		widget = sys.argv[1]
+		widget = posArgs[1]
+		verbose = '-v' in flagArgs or '--verbose' in flagArgs
 		parser.print_usage()
 		print()
-		printPackageConfigKeys(widget)
+		printPackageConfigKeys(widget, showLabels=verbose)
 		sys.exit(1)
 
 	args = parser.parse_args()
