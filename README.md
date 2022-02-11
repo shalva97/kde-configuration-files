@@ -67,7 +67,7 @@
          * `.config/kwinrc`
    * Shortcuts
       * Custom Shortcuts
-         * `.config/khotkeys`
+         * `.config/khotkeysrc`
       * Global Shortcuts
          * `.config/kglobalshortcutsrc`
    * Startup and Shutdown
