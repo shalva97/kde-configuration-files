@@ -57,6 +57,12 @@
       * Screen Locking
       * Virtual desktops
       * Activities
+         * `.config/kactivitymanagerdrc`: Activity meta info (activity name, activity icon)
+         * `.config/kactivitymanagerd-switcher`: Activity sorting in the activity switcher (probably as higher the number as more high in the ladder)
+         * `.config/kactivitymanagerd-statsrc`: Sorting of favourite (most used) applications by activity
+         * `.config/kactivitymanagerd-pluginsrc`
+         * `.config/kglobalshortcutsrc`
+         * `.config/plasma-org.kde.plasma.desktop-appletsrc`: Layout per activity
    * Window Management
       * Window behavior
          * `.config/kwinrc`
