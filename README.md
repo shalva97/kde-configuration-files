@@ -136,6 +136,8 @@
 	   * Mouse
 	   * Game Constroller
 	   * Touchpad
+         * `.config/touchpadxlibinputrc` (x11)
+         * `.config/kcminputrc` (wayland)
    * Display and Monitor
 	   * Compositor
       * Gamma
