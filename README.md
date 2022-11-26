@@ -90,6 +90,10 @@
          * `.config/baloofilerc`
 	   * Web Search Keywords
 
+#### System Monitor
+   * Page Settings
+      * `.local/share/plasma-systemmonitor/`: One page file per page
+	
 #### Personalization
    * Notifications
       * `.config/plasmanotifyrc`
