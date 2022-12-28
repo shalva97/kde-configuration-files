@@ -55,6 +55,7 @@
          * `.config/kglobalshortcutsrc`
       * Touch screen
       * Screen Locking
+         * `~/.config/kscreenlockerrc`
       * Virtual desktops
       * Activities
          * `.config/kactivitymanagerdrc`: Activity meta info (activity name, activity icon)
