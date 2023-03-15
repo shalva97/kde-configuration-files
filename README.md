@@ -94,7 +94,10 @@
 #### System Monitor
    * Page Settings
       * `.local/share/plasma-systemmonitor/`: One page file per page
-	
+
+#### Krusader
+   * `.config/krusaderrc`
+
 #### Personalization
    * Notifications
       * `.config/plasmanotifyrc`
