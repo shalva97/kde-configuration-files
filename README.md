@@ -10,6 +10,11 @@
 #### Panel
    * `.config/plasma-org.kde.plasma.desktop-appletsrc`
 
+# KDE Applications
+
+#### Krusader
+   * `.config/krusaderrc`
+
 #### Appearance
    * Global Theme
       * `.config/kdeglobals`
@@ -94,9 +99,6 @@
 #### System Monitor
    * Page Settings
       * `.local/share/plasma-systemmonitor/`: One page file per page
-
-#### Krusader
-   * `.config/krusaderrc`
 
 #### Personalization
    * Notifications
