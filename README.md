@@ -94,7 +94,7 @@
 #### System Monitor
    * Page Settings
       * `.local/share/plasma-systemmonitor/`: One page file per page
-	
+
 #### Personalization
    * Notifications
       * `.config/plasmanotifyrc`
@@ -160,6 +160,14 @@
       * `.config/device_automounter_kcmrc`
       * `.config/kded5rc`
       * `.config/kded_device_automounterrc`
+      
+# KDE Applications
+
+#### Krusader
+   * `.config/krusaderrc`
+
+# Settings
+
 ## changing appearance
 
 ### on plasma 5.22 and above you can use this self-explanatory commands to change appearance
