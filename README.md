@@ -10,11 +10,6 @@
 #### Panel
    * `.config/plasma-org.kde.plasma.desktop-appletsrc`
 
-# KDE Applications
-
-#### Krusader
-   * `.config/krusaderrc`
-
 #### Appearance
    * Global Theme
       * `.config/kdeglobals`
@@ -165,6 +160,14 @@
       * `.config/device_automounter_kcmrc`
       * `.config/kded5rc`
       * `.config/kded_device_automounterrc`
+      
+# KDE Applications
+
+#### Krusader
+   * `.config/krusaderrc`
+
+# Settings
+
 ## changing appearance
 
 ### on plasma 5.22 and above you can use this self-explanatory commands to change appearance
