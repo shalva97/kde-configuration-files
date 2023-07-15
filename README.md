@@ -110,15 +110,8 @@
       * `.config/kaccessrc`
    * Applications
 	   * File associations
-       		* System-wide default settings:
-    			* `/usr/share/applications/mimeapps.list`
-    			* `/usr/share/applications/kde-mimeapps.list`
-       		* System-wide custom settings:
-    			* `/etc/xdg/mimeapps.list`
-    			* `/etc/xdg/kde-mimeapps.list`
-        	* Users' custom settings:
-           		* `.config/mimeapps.list`
-    			* `.config/kde-mimeapps.list`
+           * `.config/mimeapps.list`
+           * `.config/kde-mimeapps.list`
 	   * Locations
 	   * Launch Feedback
       * Default Applications
