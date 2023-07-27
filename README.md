@@ -148,6 +148,7 @@
       * Gamma
 		   * `.config/kgammarc`
 	   * Night Color
+	       * `.config/kwinrc`
    * Audio
    * Power Management
       * Energy Saving
@@ -160,7 +161,7 @@
       * `.config/device_automounter_kcmrc`
       * `.config/kded5rc`
       * `.config/kded_device_automounterrc`
-      
+
 # KDE Applications
 
 #### Krusader
