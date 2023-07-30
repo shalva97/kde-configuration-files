@@ -110,10 +110,11 @@
       * `.config/kaccessrc`
    * Applications
 	   * File associations
+           * `.config/mimeapps.list`
 	   * Locations
 	   * Launch Feedback
       * Default Applications
-         * `.config/kdeglobals`
+           * `.config/mimeapps.list`
    * KDE Wallet
    * Online Accounts
    * User Feedback
