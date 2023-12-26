@@ -89,7 +89,9 @@
          * `.config/krunnerrc`
       * File Search
          * `.config/baloofilerc`
-	   * Web Search Keywords
+      * Web Search Keywords
+         * `.config/kuriikwsfiltersrc`
+         * `.local/share/kservices5/searchproviders/`
 
 #### System Monitor
    * Page Settings
@@ -140,6 +142,7 @@
          * Advanced
             * `.config/kxkbrc`
      * Mouse
+     	 * `.config/kcminputrc`
      * Game Controller
      * Touchpad
        * `.config/touchpadxlibinputrc` (x11)
