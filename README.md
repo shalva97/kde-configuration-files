@@ -70,6 +70,8 @@
       * Window Rules
          * `.config/kwinrulesrc`
       * Task switcher
+     	 * `.config/kglobalshortcutsrc`
+       	 * `.config/kwinrc`
       * KWin scripts
          * `.config/kwinrc`
    * Shortcuts
@@ -102,7 +104,8 @@
       * `.config/plasmanotifyrc`
    * Users
    * Regional Settings
-	   * Language
+      * Language
+	 * `.config/plasma-localerc`
       * Formats
          * `.config/plasma-localerc`
 	   * Spell Check
@@ -111,10 +114,12 @@
    * Accessibility
       * `.config/kaccessrc`
    * Applications
-	   * File associations
-           * `.config/mimeapps.list`
-	   * Locations
-	   * Launch Feedback
+	 * File associations
+             * `.config/mimeapps.list`
+	 * Locations
+	     * `.config/user-dirs.dirs`
+     	     * `.local/share/user-places.xbel`
+	 * Launch Feedback
       * Default Applications
            * `.config/mimeapps.list`
    * KDE Wallet
