@@ -70,8 +70,8 @@
       * Window Rules
          * `.config/kwinrulesrc`
       * Task switcher
-     	 * `.config/kglobalshortcutsrc`
-       	 * `.config/kwinrc`
+         * `.config/kglobalshortcutsrc`
+         * `.config/kwinrc`
       * KWin scripts
          * `.config/kwinrc`
    * Shortcuts
@@ -80,12 +80,12 @@
       * Global Shortcuts
          * `.config/kglobalshortcutsrc`
    * Startup and Shutdown
-	   * Login screen
-	   * Autostart
+      * Login screen
+      * Autostart
       * Background Services
-          * `.config/kded5rc`
-       * Desktop Session
-          * `.config/ksmserverrc`
+         * `.config/kded5rc`
+      * Desktop Session
+         * `.config/ksmserverrc`
    * Search
       * KRunner
          * `.config/krunnerrc`
@@ -105,59 +105,61 @@
    * Users
    * Regional Settings
       * Language
-	 * `.config/plasma-localerc`
+         * `.config/plasma-localerc`
       * Formats
          * `.config/plasma-localerc`
-	   * Spell Check
+      * Spell Check
       * Date & Time
          * `.config/ktimezonedrc`
    * Accessibility
       * `.config/kaccessrc`
    * Applications
-	 * File associations
-             * `.config/mimeapps.list`
-	 * Locations
-	     * `.config/user-dirs.dirs`
-     	     * `.local/share/user-places.xbel`
-	 * Launch Feedback
+      * File associations
+         * `.config/mimeapps.list`
+      * Locations
+         * `.config/user-dirs.dirs`
+         * `.local/share/user-places.xbel`
+      * Launch Feedback
       * Default Applications
-           * `.config/mimeapps.list`
+         * `.config/mimeapps.list`
    * KDE Wallet
    * Online Accounts
    * User Feedback
-	   * `.config/PlasmaUserFeedback`
+      * `.config/PlasmaUserFeedback`
+
 #### Network
    * Connections
       * `/etc/NetworkManager/system-connections`
    * Settings
-	   * Proxy
-	   * Connection Preferences
-	   * SSL Preferences
-	   * Cache
-	   * Cookies
-	   * Browser Identification
-	   * Windows Shares
+      * Proxy
+      * Connection Preferences
+      * SSL Preferences
+      * Cache
+      * Cookies
+      * Browser Identification
+      * Windows Shares
+
 #### Hardware
    * Input Devices
       * Keyboard
          * Hardware
             * `.config/kcminputrc`
-         * layout
+         * Layouts
             * `.config/kxkbrc`
          * Advanced
             * `.config/kxkbrc`
-     * Mouse
-     	 * `.config/kcminputrc`
-     * Game Controller
-     * Touchpad
-       * `.config/touchpadxlibinputrc` (x11)
-       * `.config/kcminputrc` (wayland)
+      * Mouse
+         * `.config/kcminputrc`
+      * Game Controller
+      * Touchpad
+         * `.config/touchpadxlibinputrc` (x11)
+         * `.config/kcminputrc` (wayland)
    * Display and Monitor
-	   * Compositor
+      * Compositor
       * Gamma
-		   * `.config/kgammarc`
-	   * Night Color
-	       * `.config/kwinrc`
+         * `.config/kgammarc`
+      * Night Color
+         * `.config/kwinrc`
    * Audio
    * Power Management
       * Energy Saving
