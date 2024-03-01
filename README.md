@@ -167,6 +167,11 @@
 
 #### Krusader
    * `.config/krusaderrc`
+#### Dolphin
+   * `.config/dolphinrc`
+#### Konsole
+   * `.config/konsolerc`
+   * `.config/konsolesshconfig`
 
 # Settings
 
