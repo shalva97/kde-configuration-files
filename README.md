@@ -4,6 +4,7 @@
   * [kcmshell5 and plasmawindowed](https://github.com/shalva97/kde-configuration-files/blob/master/kcmshell5%20and%20plasmawindowed.md)
   * [dbus events](https://github.com/shalva97/kde-configuration-files/blob/master/qdbus_events.md)
   * [convert config entries to kwrite commands](https://gist.github.com/shalva97/a705590f2c0e309374cccc7f6bd667cb)
+  * [KDE configuration backup script](https://github.com/Prayag2/konsave)
 
 # KDE config file paths
 
