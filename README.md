@@ -171,19 +171,37 @@
       * `.config/kdeconnect`
    * Removable Storage
       * `.config/device_automounter_kcmrc`
-      * `.config/kded5rc`
       * `.config/kded_device_automounterrc`
 
 # KDE Applications
 
-#### Krusader
-   * `.config/krusaderrc`
+#### Ark
+   * `.config/arkrc`
 #### Dolphin
    * `.config/dolphinrc`
+#### Filelight
+   * `.config/filelightrc`
+#### Gwenview
+   * `.config/dolphinrc`
+#### Kate
+   * `.config/katerc`
+   * `.config/katevirc`
+   * `.config/kate-externaltoolspluginrc`
+#### KCalc
+   * `.config/kcalcrc`
+#### KDE Partition Manager
+   * `.config/partitionmanagerrc`
 #### Konsole
    * `.config/konsolerc`
    * `.config/konsolesshconfig`
-
+#### Krusader
+   * `.config/krusaderrc`
+#### Spectacle
+   * `.config/spectaclerc`
+#### System Monitor
+   * `.config/systemmonitorrc`
+#### System Settings
+   * `.config/systemsettingsrc`
 # Settings
 
 ## changing appearance
