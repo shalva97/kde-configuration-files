@@ -188,15 +188,17 @@
    * `.config/katerc`
    * `.config/katevirc`
    * `.config/kate-externaltoolspluginrc`
-#### KCalc
-   * `.config/kcalcrc`
-#### KDE Partition Manager
-   * `.config/partitionmanagerrc`
+#### Koko (Image Viewer)
+  * `.config/kokorc`
 #### Konsole
    * `.config/konsolerc`
    * `.config/konsolesshconfig`
 #### Krusader
    * `.config/krusaderrc`
+#### KCalc
+   * `.config/kcalcrc`
+#### KDE Partition Manager
+   * `.config/partitionmanagerrc`
 #### Spectacle
    * `.config/spectaclerc`
 #### System Monitor
@@ -205,7 +207,7 @@
    * `.config/systemsettingsrc`
 # Settings
 
-## changing appearance
+## Changing appearance
 
 ### on plasma 5.22 and above you can use this self-explanatory commands to change appearance
 ```
