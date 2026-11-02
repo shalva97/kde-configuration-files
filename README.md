@@ -21,6 +21,7 @@
       * `.config/gtk-4.0/*`
       * `.config/gtk-3.0/*`
       * `.config/ksplashrc`
+      * `.config/dconf/user`
    * Application Style
       * `.config/kdeglobals`
    * Plasma Style
