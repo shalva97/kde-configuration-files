@@ -21,8 +21,7 @@
       * `.config/gtk-4.0/*`
       * `.config/gtk-3.0/*`
       * `.config/ksplashrc`
-   * Dark/Light Mode (dconf profile user database)
-      * `.config/dconf`
+      * `.config/dconf/user`
    * Application Style
       * `.config/kdeglobals`
    * Plasma Style
